@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 import visual.Drawer1;
 import visual.Drawer2;
@@ -30,8 +31,9 @@ public class Main extends Application {
 
         VisualLine line = new VisualLine(100, 100, 300, 150);
         VisualBezier bezier = new VisualBezier(100, 300, 700, 400, 400, 400, 550, 300, 1000);
-        context.setFill(Color.RED);
-
+        //context.setFill(Color.RED);
+        context.setLineWidth(0.5);
+        context.setStroke(Color.RED);
         line.Draw(drawer1, 1000);
         bezier.Draw(drawer1, 1000);
 
