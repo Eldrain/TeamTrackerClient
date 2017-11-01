@@ -16,7 +16,7 @@ public abstract class VisualCurve implements ICurve, IDrawable {
         drawer.startP(p);
         for(double t = 0; t <= 1; t+=h) {
             p = nextP;
-            nextP = this.getPoint(h);
+            nextP = this.getPoint(t);
             drawer.line(p, nextP);
         }
         drawer.finishP(nextP);
