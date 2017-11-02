@@ -9,5 +9,5 @@ import javafx.scene.canvas.GraphicsContext;
 public interface IDrawer {
     void line(IPoint from, IPoint to);
     void startP(IPoint p);
-    void finishP(IPoint p);
+    void finishP(IPoint prevP, IPoint lastP);
 }
